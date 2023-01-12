@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Jumpy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img width="140px" src="images/logoDNC.svg" alt="Logotipo Escola DNC">
+    </header>
+    <section>
+        <div>
+            <img width="311px" src="images/nomeJumpy.svg" alt="Logotipo Jumpy">
+        </div>
+        <div id="mensage">
+            Bem-vindo ao Jumpy!
+        </div>
+        <div>
+            <form>
+                <label for="nomeUsuário">Nome Completo:</label>
+                <input class="MustFillerSpace" name="nomeUsuário" id="nomeUsuário" type="text" required="required" placeholder="Nome completo">
+                <h6 class="ErrorMensage"></h6>
+
+                <label for="email">Email:</label>
+                <input class="MustFillerSpace" name="email" id="email" type="text" required="required" placeholder="email@email.com">
+                <h6 class="ErrorMensage"></h6>
+
+                <label for="tel">Telefone:</label>
+                <input class="MustFillerSpace" name="tel" id="tel" type="number" required="required" placeholder="(00) 00000-0000">
+                <h6 class="ErrorMensage"></h6>
+
+                <label for="cpf">CPF:</label>
+                <input class="MustFillerSpace" name="cpf" id="cpf" type="number" required="required" placeholder="000.000.000-00">
+                <h6 class="ErrorMensage"></h6>
+
+                <label for="senha">Senha:</label>
+                <input class="MustFillerSpace" name="senha" id="senha" type="password" required="required" placeholder="********">
+                <h6 class="ErrorMensage"></h6>
+
+                <button onclick="verifyInformations()" id="submitionStatus" type="submit">Cadastrar</button>
+                <h6 id="finalMensage"></h6>
+            </form>
+        </div>
+    </section>
+    <script src="javascript.js"></script>
+</body>
+</html>

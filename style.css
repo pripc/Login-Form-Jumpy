@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+
+:root{
+    --blackDNC:#303030;
+    --WhiteTextBox:rgba(255, 255, 255, 0.9);
+    --BlueSubmitButton:#0C70F2;
+    --GrayPlaceholderss:#616161;
+}
+body{
+    margin:0px;
+    background-color: var(--blackDNC);
+}
+header img{
+    padding-left:55px;
+    padding-top:30px;
+}
+section{
+    display:grid;
+    grid-auto-flow: row;
+    text-align:center;
+    justify-content: center;
+}
+section form{
+    display:flex;
+    flex-direction: column;
+    text-align:left;
+    width:524px;
+}
+#mensage{
+    font-family: Questrial;
+    font-size:25px;
+    color:white;
+    font-weight:bold;
+    padding-top:10px;
+    padding-bottom: 30px;
+}
+form label{
+    color:white;
+    font-family:raleway;
+    font-weight:600;
+    font-size:18px;
+    margin-bottom:5px;
+}
+form input{
+    background-color: var(--WhiteTextBox);
+    color:var(--GrayPlaceholderss);
+    font-family:raleway;
+    font-size:14px;
+    font-weight:400;
+    height:40px;
+    border-radius:10px;
+    margin-bottom:3px;
+
+}
+form button{
+    background-color: var(--BlueSubmitButton);
+    font-family:Raleway;
+    font-weight:800;
+    color:white;
+    font-size:18px;
+    border-style: none;
+    border-radius:10px;
+    height:48px;
+    cursor:pointer;
+    margin-bottom:10px;
+}
+form button:hover{
+    color:var(--blackDNC);
+    background-color: #00ABFF;
+    
+}
+h6{
+    font-family:raleway;
+    font-weight:400;
+    color:red;
+    margin:0px;
+    height:16px;
+    margin-bottom:20px;
+    text-align: right;
+}
+#finalMensage{
+    text-align: left;
+    margin-bottom:57px;
+}
